@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Jad Assaf — jad.moe</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="banner"></header>
+
+<nav class="nav">
+  <a href="index.html" class="active">Home</a>
+  <a href="blog.html">Blog</a>
+</nav>
+
+<main>
+
+<section class="hero">
+  <h1>Jad Assaf</h1>
+  <p>DevOps & Systems Engineer | Information Systems Student</p>
+  <p>Hi, my name is Jad. I am an Information Systems student at Youngstown State University. I am currently on track to become a DevOps engineer, with strong interest in low-level operating systems, memory control, and reverse engineering.</p>
+</section>
+
+<section class="contact">
+  <p>GitHub: <a href="https://github.com/squallstrings" target="_blank">@squallstrings</a></p>
+
+  <p id="email" onclick="copyEmail()">Email: Assaf.jad230 [at] gmail (dot) com</p>
+  <span id="copied">Copied to clipboard</span>
+
+  <a class="resume-btn" href="resume.pdf" target="_blank">Resume</a>
+</section>
+
+<section class="portfolio">
+  <h2>Portfolio</h2>
+
+  <div class="project">
+    <h3><a href="https://github.com/squallstrings/Cedar" target="_blank">Cedar</a></h3>
+    <p>Python macro input recorder capable of capturing and replaying complex input sequences for automation and testing.</p>
+    <div class="badges">
+      <span class="python">Python</span>
+    </div>
+  </div>
+
+  <div class="project">
+    <h3><a href="https://github.com/squallstrings/IOCTL-kernel-driver" target="_blank">IOCTL Kernel Driver</a></h3>
+    <p>Windows kernel-mode driver written in C++ exploring IOCTL communication, memory access, and user–kernel boundaries.</p>
+    <div class="badges">
+      <span class="cpp">C++</span>
+    </div>
+  </div>
+
+  <div class="project">
+    <h3><a href="https://github.com/squallstrings/kyubey-scan" target="_blank">kyubey-scan</a></h3>
+    <p>Lightweight port scanner written in C++ focused on socket behavior, threading, and network enumeration.</p>
+    <div class="badges">
+      <span class="cpp">C++</span>
+    </div>
+  </div>
+
+  <div class="project">
+    <h3>dots-figs</h3>
+    <p>Personal Arch Linux dotfiles including a full Neovim Lua configuration and Hyprland desktop environment setup.</p>
+    <div class="badges">
+      <span class="lua">Lua</span>
+      <span class="linux">Linux</span>
+    </div>
+  </div>
+
+  <div class="project">
+    <h3>Hospital Backend Mock</h3>
+    <p>Containerized backend stack with monitoring and metrics using Prometheus, Grafana, Postgres, Nginx, and Bash on Ubuntu.</p>
+    <div class="badges">
+      <span class="linux">Linux</span>
+      <span class="docker">Docker</span>
+      <span class="postgres">Postgres</span>
+      <span class="bash">Bash</span>
+      <span class="nginx">Nginx</span>
+    </div>
+  </div>
+
+  <div class="project">
+    <h3>Synge</h3>
+    <p>
+      <br>
+      Reimplemented selected standard-library abstractions from first principles to study ownership, memory allocation strategies, and safe/unsafe boundaries in Rust.
+    </p>
+    <div class="badges">
+      <span class="rust">Rust</span>
+    </div>
+  </div>
+
+</section>
+
+</main>
+
+<footer class="social">
+  <a href="https://github.com/squallstrings" target="_blank">GitHub</a>
+  <a href="https://x.com/squallstrings">X</a>
+  <a href="https://www.linkedin.com/in/jad-assaf-6964b93a0/">LinkedIn</a>
+</footer>
+
+<script>
+function copyEmail() {
+  navigator.clipboard.writeText("assaf.jad230@gmail.com");
+  const msg = document.getElementById("copied");
+  msg.style.opacity = "1";
+  setTimeout(() => msg.style.opacity = "0", 1400);
+}
+</script>
+
+</body>
+</html>
