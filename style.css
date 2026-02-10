@@ -107,7 +107,8 @@
 .postgres{background:#336791;}
 .bash{background:#4eaa25;}
 .nginx{background:#009639;}
-.go{background:#00ADD8;color:#000;}
+.go{background:#007D9C;color:#fff;}
+
 
 
 .social{
@@ -120,4 +121,5 @@
   text-decoration:none;
   color:#1a1a1a;
 }
+
 
